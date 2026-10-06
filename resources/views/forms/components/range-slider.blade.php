@@ -3,7 +3,7 @@
     :field="$field"
 >
     <div x-data="{
-        state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }}
+        state: $wire.{{ $applyStateBindingModifiers('$entangle(\'' . $getStatePath() . '\')') }}
     }">
         <input
             id="{{$getId()}}"
