@@ -108,7 +108,7 @@ class RangeSlider extends Field
 
     public function getSteps(): array
     {
-        return $this->steps ?? [];
+        return $this->steps;
     }
 
     public function getStep(): int | float
